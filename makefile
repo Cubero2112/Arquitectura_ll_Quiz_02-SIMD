@@ -1,9 +1,9 @@
 intr: intr.o
-	./bin/1024_dot_product_intrinsics
+	./bin/dot_product_intrinsics
 
 
 intr.o:
-	g++ -mavx2 1024_dot_product_intrinsics.cpp -o bin/1024_dot_product_intrinsics
+	g++ -mavx2 dot_product_intrinsics.cpp -o bin/dot_product_intrinsics
 
 
 native: native.o

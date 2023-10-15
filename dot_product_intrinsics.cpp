@@ -2,7 +2,7 @@
 #include <iostream>
 #include <chrono>
 
-const int arraySize = 262144;
+const int arraySize = 1024;
 const int chunkSize = 4;  // We use 4-element chunks for SSE operations
 
 // Function to calculate the dot product using SSE intrinsics
@@ -40,10 +40,10 @@ int main() {
         if ((i%2)==0)
         {
             arrayA[i] = 17.0f;
-            arrayB[i] = 61.61f;
+            arrayB[i] = 61.0f;
         }else{
-            arrayA[i] = 106.44f;
-            arrayB[i] = 88.56f;
+            arrayA[i] = 106.0f;
+            arrayB[i] = 88.0f;
         }
     }
 

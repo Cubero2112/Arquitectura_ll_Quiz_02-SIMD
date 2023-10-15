@@ -1,7 +1,7 @@
 #include <iostream>
 #include <chrono>
 
-const int size = 262144;
+const int size = 1024;
 float dotProduct(const float array1[], const float array2[], int size) {
     float result = 0.0;
     for (int i = 0; i < size; i++) {
@@ -24,10 +24,10 @@ int main() {
         if ((i%2)==0)
         {
             arrayA[i] = 17.0f;
-            arrayB[i] = 61.61f;
+            arrayB[i] = 61.0f;
         }else{
-            arrayA[i] = 106.44f;
-            arrayB[i] = 88.56f;
+            arrayA[i] = 106.0f;
+            arrayB[i] = 88.0f;
         }
     }
     

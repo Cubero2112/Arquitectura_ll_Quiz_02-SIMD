@@ -35,19 +35,12 @@ int main() {
     float arrayA[arraySize]; 
     float arrayB[arraySize]; 
 
-    for (size_t i = 0; i < arraySize; i++)
+    for ( int i = 0; i < arraySize; i++)
     {
-        if ((i%2)==0)
-        {
-            arrayA[i] = 17.0f;
-            arrayB[i] = 61.0f;
-        }else{
-            arrayA[i] = 106.0f;
-            arrayB[i] = 88.0f;
-        }
+
+        arrayA[i] = 15.0f;
+        arrayB[i] = 23.0f;
     }
-
-
 
     auto start = std::chrono::high_resolution_clock::now();
     

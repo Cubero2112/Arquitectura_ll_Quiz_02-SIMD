@@ -57,8 +57,9 @@ int main() {
     std::chrono::duration<double> duration = end - start;
 
     std::cout << "Time taken: " << duration.count() << " seconds" << std::endl;
-    std::cout << "My float number with high precision: " << std::fixed << std::setprecision(5) << result << std::endl;
-    //printf("Dot Product: %f\n", result);
+    //std::cout << "My float number with high precision: " << std::fixed << std::setprecision(5) << result << std::endl;
+    
+    printf("Dot Product: %f\n", result);
 
     return 0;
 }

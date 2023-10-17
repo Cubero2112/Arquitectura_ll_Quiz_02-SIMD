@@ -22,3 +22,10 @@
 
 #### Resultados esperados
 Para cada caso se espera obtener el resultado del producto punto junto con el tiempo de ejecucion tomado para realizarlo.
+
+
+- Output usando intrinsic functions:
+![Alt text](imgs/image-1.png)
+
+- Output sin usar optimizaciones:
+![Alt text](imgs/image-2.png)

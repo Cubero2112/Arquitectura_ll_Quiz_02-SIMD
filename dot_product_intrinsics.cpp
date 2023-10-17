@@ -2,7 +2,7 @@
 #include <iostream>
 #include <chrono>
 
-const int arraySize = 1024;
+const int arraySize = 1024*4*4;
 const int chunkSize = 4;  // We use 4-element chunks for SSE operations
 
 // Function to calculate the dot product using SSE intrinsics

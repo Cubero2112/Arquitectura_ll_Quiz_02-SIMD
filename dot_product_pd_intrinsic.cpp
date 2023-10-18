@@ -17,10 +17,10 @@ float DotProductArrays(float* arrayA, float* arrayB, int size) {
      
 
         // Multiply the two chunks element-wise and accumulate the result
-        //__m128 dotProductContribution = _mm_dp_ps(chunkA, chunkB, 0xFF);
+        __m128 dotProductContribution = _mm_dp_ps(chunkA, chunkB, 0xFF);
         //std::cout << "Dot Product actual: " << dotProductContribution << std::endl;
         //dotProductAccumulator += dotProductContribution;
-        dotProductAccumulator = _mm_add_ps(dotProductAccumulator, _mm_dp_ps(chunkA, chunkB, 0xFF));        
+        dotProductAccumulator = _mm_add_ps(dotProductAccumulator, dotProductContribution);        
     }
 
     // Extract the result from the accumulator

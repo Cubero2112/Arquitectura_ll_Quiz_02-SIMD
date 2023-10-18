@@ -11,7 +11,7 @@ float dotProduct(const float array1[], const float array2[], int size) {
         result += array1[i] * array2[i];
     }
 
-    
+
     return result;
 }
 

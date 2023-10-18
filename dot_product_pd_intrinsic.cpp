@@ -2,7 +2,7 @@
 #include <iostream>
 #include <chrono>
 
-
+// Crea variables para el tamano del array y del chunk
 const int arraySize = 1024*4*4;
 const int chunkSize = 4;
 
